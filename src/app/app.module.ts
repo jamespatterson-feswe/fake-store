@@ -3,21 +3,25 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FooterModule, SaleBannerModule } from '@jamespatterson-feswe/components';
+import {
+  FooterModule,
+  HeaderModule
+} from '@jamespatterson-feswe/components';
+import { InformationBannerModule } from './modules';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent],
   imports: [
-    // BrowserAnimationsModule,
     AppRoutingModule,
     BrowserModule,
     FooterModule,
-    SaleBannerModule
+    HeaderModule,
+    HttpClientModule,
+    InformationBannerModule
   ],
   providers: [],
   bootstrap: [AppComponent],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
-export class AppModule { }
+export class AppModule {}

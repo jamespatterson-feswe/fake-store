@@ -5,15 +5,15 @@ import { AppComponent } from './app.component';
 const routes: Routes = [
   {
     path: '',
-    component: AppComponent
+    component: AppComponent,
     // loadChildren: () =>
     //   import('./app.module')
     //   .then(module => module.AppModule)
-  }
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

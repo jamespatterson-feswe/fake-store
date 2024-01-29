@@ -1,7 +1,8 @@
-<lib-sale-banner></lib-sale-banner>
+<lib-information-banner *ngIf="sales.length" [sales]="sales"></lib-information-banner>
+<lib-header [company]="header" [links]="categories"></lib-header>
 <main class="content">
-    <p>menu bar for items would go here</p>
-    <p>content surrounding the categories goes here</p>
-    <p>join the email list for discounts section</p>
+  <p>menu bar for items would go here</p>
+  <p>content surrounding the categories goes here</p>
+  <p>join the email list for discounts section</p>
 </main>
-<lib-footer></lib-footer>
+<lib-footer [licensing]="footer"></lib-footer>
